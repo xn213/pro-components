@@ -1,4 +1,5 @@
 <template>
+<div>
   <div v-waterMarker="{text:'xn213版权所有',textColor:'rgba(180, 180, 180, 0.4)'}">
 
     <div class="waves-box">
@@ -45,6 +46,20 @@
     <hr><hr>
     <br>
 
+    <div v-waterMarker="{text:'这里是水印',textColor:'rgba(180,180,180,.3)'}">
+      <div v-waves style="line-height: 100px;text-align: center;border: 1px solid #ccc;margin: 50px;width: 213px;height: 100px">test v-waves</div>
+    </div>
+    <div style="height: 200px" v-waterMarker="{text:'这里是水印',textColor:'red'}">
+      <h1>1. test v-watermarker</h1>
+    </div>
+
+    <div style="height: 200px;border-top: 2px solid #0bf;margin-top: 21px;" v-waterMarker="{text:'版权所有 ©xn213',textColor:'blue'}">
+      <h1>2. test v-watermarker</h1>
+    </div>
+
+    <hr><hr>
+    <br>
+
     <!-- 日历组件 date-picker -->
     <div class="date-wrapper">
       <!--  :value="date" @input="val => value = val" -->
@@ -76,7 +91,7 @@
     <div class="btns">
       <!-- 1 2 3 4 demo 显示 -->
       <button v-permission="'1'">权限按钮1</button>
-      <button v-permission="'2'">权限按钮2</button>
+      <button v-waves v-permission="'2'">权限按钮2</button>
       <button v-permission="'demo'">权限按钮demo</button>
       <!-- 5 不显示 -->
       <button v-permission="'5'">权限按钮5</button>
@@ -118,6 +133,7 @@
 
     <!-- <x-rate /> -->
     <Rate />
+    </div>
   </div>
 </template>
 

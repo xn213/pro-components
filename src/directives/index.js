@@ -7,6 +7,7 @@ import draggable from './draggable'
 import color from './color'
 import LazyLoad from './lazyLoad'
 import permission from './permission'
+import waves from './waves'
 
 // 自定义指令
 const directives = {
@@ -18,7 +19,8 @@ const directives = {
   draggable,
   color,
   LazyLoad,
-  permission
+  permission,
+  waves
 }
 // 批量注册指令
 export default {
